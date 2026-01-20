@@ -1,0 +1,217 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #fff2e5;
+  color: #222;
+  font-family: "San Francisco", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* Navbar and footer (global) */
+.navbar {
+  font-family: "New York", serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  background: #fdf5e6 !important;
+}
+.navbar-brand {
+  font-family: "New York", serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+footer {
+  flex-shrink: 0;
+  background: #fdf5e6 !important;
+  color: #888;
+  font-size: 1rem;
+}
+
+/* Home page only */
+.home-page .home-flex-container {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 100%;
+}
+.home-page .home-header {
+  text-align: left;
+  margin: 2rem 0 2rem 2rem;
+  max-width: 1000px;
+  width: 100%;
+}
+.home-page .display-5, .home-page .fs-2 {
+  font-family: "New York", serif;
+}
+.home-page .lead, .home-page p, .home-page h2, .home-page h1 {
+  font-family: "San Francisco", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+.wave, .cactus, .bird, .crow, .book, .search {
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+
+/* Resume page only */
+.resume-page .section-title,
+.resume-page h1, .resume-page h2, .resume-page h3, .resume-page h4, .resume-page h5 {
+  font-family: "New York", serif;
+}
+.resume-page .section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+.resume-page .section-title .icon {
+  font-size: 1.4em;
+}
+/* Emphasized job title */
+.resume-page .job-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #222;
+  margin-bottom: 0.2rem;
+}
+/* Emphasized organization */
+.resume-page .organization {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 0.1rem;
+}
+/* Emphasized dates */
+.resume-page .date {
+  font-size: 1.05rem;
+  font-style: italic;
+  color: #a67c52;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+/* Emphasized job description */
+.resume-page .description {
+  font-size: 1.08rem;
+  color: #222;
+  line-height: 1.85;
+  margin-bottom: 1.7rem;
+}
+.resume-page .mb-4 {
+  margin-bottom: 2.5rem !important;
+}
+.resume-page #education .mb-3,
+.resume-page #skills li,
+.resume-page #do li {
+  margin-bottom: 1.5rem;
+}
+.resume-page .col-lg-10.mx-auto {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.resume-page .nav-pills .nav-link {
+  font-family: "New York", serif;
+  font-weight: 600;
+  color: #222;
+  background: transparent;
+  border: none;
+  margin: 0 0.25rem;
+  transition: background 0.2s, color 0.2s;
+}
+.resume-page .nav-pills .nav-link.active,
+.resume-page .nav-pills .nav-link:focus,
+.resume-page .nav-pills .nav-link:hover {
+  background: #ffe4c2;
+  color: #111;
+}
+.resume-page .skill-label {
+  font-weight: 600;
+  margin-right: 0.35rem;
+}
+
+/* Work page only */
+.work-page .section-title {
+  font-family: "New York", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+.work-page .section-title .icon {
+  font-size: 1.4em;
+}
+.work-page .work-card-img {
+  object-fit: cover;
+  height: 220px;
+  width: 100%;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+@media (max-width: 576px) {
+  .work-page .work-card-img {
+    height: 140px;
+  }
+}
+
+/* Contact page only */
+.contact-page .section-title {
+  font-family: "New York", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+.contact-page .section-title .icon {
+  font-size: 1.4em;
+}
+.contact-page a {
+  color: #33485e;
+  text-decoration: underline;
+}
+.contact-page a:hover {
+  color: #a67c52;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .home-header, .resume-page .col-lg-10.mx-auto, .work-page .col-lg-10.mx-auto, .contact-page .col-lg-10.mx-auto {
+    margin: 1rem 0 1rem 1rem;
+    max-width: 100%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .section-title {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+  .home-header, .resume-page .col-lg-10.mx-auto, .work-page .col-lg-10.mx-auto, .contact-page .col-lg-10.mx-auto {
+    margin: 1rem;
+    max-width: 100%;
+  }
+}
